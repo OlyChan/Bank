@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banking System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to Nithub Bank</h1>
+
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="usernameInput" placeholder="Username" />
+      <input type="password" id="passwordInput" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+      <h2>Dashboard</h2>
+      <p id="welcomeMessage"></p>
+      <p>Balance: $<span id="balance">0</span></p>
+      <h3>Deposit</h3>
+      <input type="number" id="depositInput" placeholder="Amount" />
+      <button onclick="deposit()">Deposit</button>
+      <br />
+      <h3>Transfer</h3>
+      <input type="text" id="recipientInput" placeholder="Recipient" />
+      <input type="number" id="transferInput" placeholder="Amount" />
+      <button onclick="transfer()">Transfer</button>
+      <br />
+      <h3>Withdrawal</h3>
+      <input type="number" id="withdrawInput" placeholder="Amount" />
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
